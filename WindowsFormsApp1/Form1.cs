@@ -43,6 +43,8 @@ namespace WindowsFormsApp1
                 case "Division":
                     result = firstValue / secondValue;
                     break;
+                default:
+                    throw new Exception("Неизвестная операция");
             }
             textBox5.Text = result.ToString();
         }
