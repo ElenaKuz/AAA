@@ -38,6 +38,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.Sin = new System.Windows.Forms.Button();
+            this.Cos = new System.Windows.Forms.Button();
+            this.Pow = new System.Windows.Forms.Button();
+            this.Log10 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Add
@@ -128,9 +132,53 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Число 2";
             // 
+            // Sin
+            // 
+            this.Sin.Location = new System.Drawing.Point(33, 249);
+            this.Sin.Name = "Sin";
+            this.Sin.Size = new System.Drawing.Size(75, 23);
+            this.Sin.TabIndex = 10;
+            this.Sin.Text = "sin(x)";
+            this.Sin.UseVisualStyleBackColor = true;
+            this.Sin.Click += new System.EventHandler(this.Click2);
+            // 
+            // Cos
+            // 
+            this.Cos.Location = new System.Drawing.Point(167, 249);
+            this.Cos.Name = "Cos";
+            this.Cos.Size = new System.Drawing.Size(75, 23);
+            this.Cos.TabIndex = 11;
+            this.Cos.Text = "cos(x)";
+            this.Cos.UseVisualStyleBackColor = true;
+            this.Cos.Click += new System.EventHandler(this.Click2);
+            // 
+            // Pow
+            // 
+            this.Pow.Location = new System.Drawing.Point(33, 297);
+            this.Pow.Name = "Pow";
+            this.Pow.Size = new System.Drawing.Size(75, 23);
+            this.Pow.TabIndex = 12;
+            this.Pow.Text = "x^2";
+            this.Pow.UseVisualStyleBackColor = true;
+            this.Pow.Click += new System.EventHandler(this.Click2);
+            // 
+            // Log10
+            // 
+            this.Log10.Location = new System.Drawing.Point(167, 297);
+            this.Log10.Name = "Log10";
+            this.Log10.Size = new System.Drawing.Size(75, 23);
+            this.Log10.TabIndex = 13;
+            this.Log10.Text = "Log10(x)";
+            this.Log10.UseVisualStyleBackColor = true;
+            this.Log10.Click += new System.EventHandler(this.Click2);
+            // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(277, 351);
+            this.Controls.Add(this.Log10);
+            this.Controls.Add(this.Pow);
+            this.Controls.Add(this.Cos);
+            this.Controls.Add(this.Sin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -167,6 +215,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button Sin;
+        private System.Windows.Forms.Button Cos;
+        private System.Windows.Forms.Button Pow;
+        private System.Windows.Forms.Button Log10;
     }
 }
 

@@ -28,5 +28,17 @@ namespace WindowsFormsApp1
       
             textBox5.Text = result.ToString();
         }
+
+        private void Click2(object sender, EventArgs e)
+        {
+            string Transmission = ((Button)sender).Name;
+            string firstValueText = textBox3.Text;
+            double firstValue = Convert.ToDouble(firstValueText);
+
+            IOneArgumentCalculator calculator = OneArgumentFactory.createCalculate(Transmission);
+            double result = calculator.Calculate(firstValue);
+
+            textBox5.Text = result.ToString();
+        }
     }
 }
