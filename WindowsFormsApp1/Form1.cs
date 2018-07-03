@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -31,16 +24,16 @@ namespace WindowsFormsApp1
             double secondValue = Convert.ToDouble(secondValueText);
            switch (((Button)sender).Name)
             {
-                case "Plus":
+                case "Add":
                     result = secondValue + firstValue;
                     break;
-                case "Minus":
+                case "Substract":
                     result = firstValue - secondValue;
                     break;
-                case "Multiplication":
+                case "Multiply":
                     result = firstValue * secondValue;
                     break;
-                case "Division":
+                case "Divide":
                     result = firstValue / secondValue;
                     break;
                 default:

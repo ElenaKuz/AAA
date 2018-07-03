@@ -1,9 +1,9 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    public class MinusCalculator
+    public class MinusCalculator : ITwoArgumentsCalculator
     {
-        public double Calculator(double first, double second)
+        public double Calculate(double first, double second)
         {
             return first - second;
         }
