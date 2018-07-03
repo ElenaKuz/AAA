@@ -17,28 +17,15 @@ namespace WindowsFormsApp1
 
         private void Click(object sender, EventArgs e)
         {
-            double result;
+            string Transmission =((Button)sender).Name;
             string firstValueText = textBox3.Text;
             double firstValue = Convert.ToDouble(firstValueText);
             string secondValueText = textBox4.Text;
             double secondValue = Convert.ToDouble(secondValueText);
-           switch (((Button)sender).Name)
-            {
-                case "Add":
-                    result = secondValue + firstValue;
-                    break;
-                case "Substract":
-                    result = firstValue - secondValue;
-                    break;
-                case "Multiply":
-                    result = firstValue * secondValue;
-                    break;
-                case "Divide":
-                    result = firstValue / secondValue;
-                    break;
-                default:
-                    throw new Exception("Неизвестная операция");
-            }
+
+            ITwoArgumentsCalculator calculator = TwoArgumentFactory.createCalculate(Transmission);
+            double result = calculator.Calculate(firstValue, secondValue);
+      
             textBox5.Text = result.ToString();
         }
     }
