@@ -1,5 +1,6 @@
 ﻿using WindowsFormsApp1.TwoArguments;
 using NUnit.Framework;
+using System;
 
 namespace MyCalculatorTests.TwoArgumentTests
 {
@@ -14,6 +15,13 @@ namespace MyCalculatorTests.TwoArgumentTests
             var calculator = new DivisionCalculator();
             var actualResult = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, actualResult);
+        }
+
+        [Test]
+        public void MyCalculateTest()
+        {
+            ITwoArgumentsCalculator calculator = TwoArgumentFactory.createCalculate("Divide");
+            Assert.Throws<Exception>(()=>calculator.Calculate(5,0));
         }
     }
 
