@@ -6,15 +6,13 @@ namespace MyCalculatorTests.OneArgumentTests
     [TestFixture]
     public class SinCalculatorTests
     {
-        [Test]
-        public void CalculateTest()
+        [TestCase(0, 0)]
+        public void CalculateTest(double firstValue, double expected)
         {
-            // подготовительные действия
-            IOneArgumentCalculator calcultor = new SinCalculator();
-            double actual = calcultor.Calculate(0);
-            Assert.AreEqual(0, actual);
+            var calculator = new SinCalculator();
+            var actualResult = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, actualResult);
         }
-        // ...
     }
 
 }

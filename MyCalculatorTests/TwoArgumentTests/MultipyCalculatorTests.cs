@@ -6,15 +6,16 @@ namespace MyCalculatorTests.TwoArgumentTests
     [TestFixture]
     public class MultipyCalculatorTests
     {
-        [Test]
-        public void CalculateTest()
+        [TestCase(3, 2, 6)]
+        [TestCase(2, 4, 8)]
+        [TestCase(3, 3, 9)]
+        public void CalculateTest(double firstValue, double secondValue, double expected)
         {
-            // подготовительные действия
-            ITwoArgumentsCalculator calcultor = new MultipyCalculator();
-            double actual = calcultor.Calculate(2, 2);
-            Assert.AreEqual(4, actual);
+            var calculator = new MultipyCalculator();
+            var actualResult = calculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, actualResult);
         }
-        // ...
+
     }
 
 }

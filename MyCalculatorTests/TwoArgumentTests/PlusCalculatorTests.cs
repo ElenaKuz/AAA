@@ -6,15 +6,15 @@ namespace MyCalculatorTests.TwoArgumentTests
     [TestFixture]
     public class PlusCalculatorTests
     {
-        [Test]
-        public void CalculateTest()
+        [TestCase(6, 2, 8)]
+        [TestCase(8, 6, 14)]
+        [TestCase(9, 3, 12)]
+        public void CalculateTest(double firstValue, double secondValue, double expected)
         {
-            // подготовительные действия
-            ITwoArgumentsCalculator calcultor = new PlusCalculator();
-            double actual = calcultor.Calculate(2, 2);
-            Assert.AreEqual(4, actual);
+            var calculator = new PlusCalculator();
+            var actualResult = calculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, actualResult);
         }
-        // ...
     }
 
 }

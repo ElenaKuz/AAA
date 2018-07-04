@@ -6,15 +6,15 @@ namespace MyCalculatorTests.OneArgumentTests
     [TestFixture]
     public class Log10CalculatorTests
     {
-        [Test]
-        public void CalculateTest()
+        [TestCase(10, 1)]
+        [TestCase(100, 2)]
+        [TestCase(10000, 4)]
+        public void CalculateTest(double firstValue, double expected)
         {
-            // подготовительные действия
-            IOneArgumentCalculator calcultor = new Log10Calculator();
-            double actual = calcultor.Calculate(100);
-            Assert.AreEqual(2, actual);
+            var calculator = new Log10Calculator();
+            var actualResult = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, actualResult);
         }
-        // ...
     }
 
 }

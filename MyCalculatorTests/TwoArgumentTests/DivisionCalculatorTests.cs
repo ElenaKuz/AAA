@@ -6,15 +6,15 @@ namespace MyCalculatorTests.TwoArgumentTests
     [TestFixture]
     public class DivisionCalculatorTests
     {
-        [Test]
-        public void CalculateTest()
+        [TestCase(6, 2, 3)]
+        [TestCase(8, 4, 2)]
+        [TestCase(9, 3, 3)]
+        public void CalculateTest(double firstValue, double secondValue, double expected)
         {
-            // подготовительные действия
-            ITwoArgumentsCalculator calcultor = new DivisionCalculator();
-            double actual = calcultor.Calculate(8, 2);
-            Assert.AreEqual(4, actual);
+            var calculator = new DivisionCalculator();
+            var actualResult = calculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, actualResult);
         }
-        // ...
     }
 
 }

@@ -6,15 +6,13 @@ namespace MyCalculatorTests.OneArgumentTests
     [TestFixture]
     public class CosCalculatorTests
     {
-        [Test]
-        public void CalculateTest()
+        [TestCase(0, 1)]
+        public void CalculateTest(double firstValue, double expected)
         {
-            // подготовительные действия
-            IOneArgumentCalculator calcultor = new CosCalculator();
-            double actual = calcultor.Calculate(0);
-            Assert.AreEqual(1, actual);
+            var calculator = new CosCalculator();
+            var actualResult = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, actualResult);
         }
-        // ...
     }
 
 }
