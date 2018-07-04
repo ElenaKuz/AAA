@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace WindowsFormsApp1.OneArgument
 {
     public interface IOneArgumentCalculator
     {

@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace WindowsFormsApp1.TwoArguments
 {
     public class PlusCalculator : ITwoArgumentsCalculator
     {

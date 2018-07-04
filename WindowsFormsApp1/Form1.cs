@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using WindowsFormsApp1.OneArgument;
+using WindowsFormsApp1.TwoArguments;
 
 namespace WindowsFormsApp1
 {
@@ -17,7 +19,7 @@ namespace WindowsFormsApp1
 
         private void Click(object sender, EventArgs e)
         {
-            string Transmission =((Button)sender).Name;
+            string Transmission = ((Button)sender).Name;
             string firstValueText = textBox3.Text;
             double firstValue = Convert.ToDouble(firstValueText);
             string secondValueText = textBox4.Text;
@@ -25,7 +27,7 @@ namespace WindowsFormsApp1
 
             ITwoArgumentsCalculator calculator = TwoArgumentFactory.createCalculate(Transmission);
             double result = calculator.Calculate(firstValue, secondValue);
-      
+
             textBox5.Text = result.ToString();
         }
 
