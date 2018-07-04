@@ -47,8 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="OneArgumentTests\ArctgCalculatorTest.cs" />
+    <Compile Include="OneArgumentTests\Log2xCalculatorTests.cs" />
     <Compile Include="OneArgumentTests\OneArgumentFactoryTests.cs" />
     <Compile Include="OneArgumentTests\CosCalculatorTests.cs" />
+    <Compile Include="TwoArgumentTests\LogxyTest.cs" />
     <Compile Include="TwoArgumentTests\TwoArgumentsFactoryTests.cs" />
     <Compile Include="TwoArgumentTests\DivisionCalculatorTests.cs" />
     <Compile Include="OneArgumentTests\Log10CalculatorTests.cs" />
@@ -58,6 +61,8 @@
     <Compile Include="OneArgumentTests\PowCalculatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OneArgumentTests\SinCalculatorTests.cs" />
+    <Compile Include="TwoArgumentTests\XgrademinusyTests.cs" />
+    <Compile Include="TwoArgumentTests\XgradeyCalculatorTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WindowsFormsApp1\MyCalculator.csproj">
