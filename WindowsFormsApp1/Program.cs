@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
-namespace WindowsFormsApp1
+namespace WindowsFormsApp1.OneArgument
 {
     static class Program
     {

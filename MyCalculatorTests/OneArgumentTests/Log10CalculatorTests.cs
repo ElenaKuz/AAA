@@ -1,4 +1,5 @@
-﻿using WindowsFormsApp1.OneArgument;
+﻿using System;
+using WindowsFormsApp1.OneArgument;
 using NUnit.Framework;
 
 namespace MyCalculatorTests.OneArgumentTests
@@ -14,6 +15,13 @@ namespace MyCalculatorTests.OneArgumentTests
             var calculator = new Log10Calculator();
             var actualResult = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actualResult);
+        }
+
+        [Test]
+        public void MyCalculateTest()
+        {
+            IOneArgumentCalculator calculator = OneArgumentFactory.createCalculate("Log10");
+            Assert.Throws<Exception>(() => calculator.Calculate(-3));
         }
     }
 

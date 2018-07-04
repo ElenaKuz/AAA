@@ -42,6 +42,16 @@
             this.Cos = new System.Windows.Forms.Button();
             this.Pow = new System.Windows.Forms.Button();
             this.Log10 = new System.Windows.Forms.Button();
+            this.Xgradey = new System.Windows.Forms.Button();
+            this.Logxy = new System.Windows.Forms.Button();
+            this.Xgrademinusy = new System.Windows.Forms.Button();
+            this.Xgrademinusone = new System.Windows.Forms.Button();
+            this.Log2x = new System.Windows.Forms.Button();
+            this.Twogradex = new System.Windows.Forms.Button();
+            this.Tengradex = new System.Windows.Forms.Button();
+            this.Arcsin = new System.Windows.Forms.Button();
+            this.Arccos = new System.Windows.Forms.Button();
+            this.Arctg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Add
@@ -119,18 +129,18 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(33, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Число 1";
+            this.label2.Text = "Число x";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(33, 96);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 13);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Число 2";
+            this.label3.Text = "Число y";
             // 
             // Sin
             // 
@@ -172,9 +182,119 @@
             this.Log10.UseVisualStyleBackColor = true;
             this.Log10.Click += new System.EventHandler(this.Click2);
             // 
+            // Xgradey
+            // 
+            this.Xgradey.Location = new System.Drawing.Point(281, 163);
+            this.Xgradey.Name = "Xgradey";
+            this.Xgradey.Size = new System.Drawing.Size(75, 23);
+            this.Xgradey.TabIndex = 14;
+            this.Xgradey.Text = "x^y";
+            this.Xgradey.UseVisualStyleBackColor = true;
+            this.Xgradey.Click += new System.EventHandler(this.Click);
+            // 
+            // Logxy
+            // 
+            this.Logxy.Location = new System.Drawing.Point(281, 249);
+            this.Logxy.Name = "Logxy";
+            this.Logxy.Size = new System.Drawing.Size(75, 23);
+            this.Logxy.TabIndex = 15;
+            this.Logxy.Text = "logx(y)";
+            this.Logxy.UseVisualStyleBackColor = true;
+            this.Logxy.Click += new System.EventHandler(this.Click);
+            // 
+            // Xgrademinusy
+            // 
+            this.Xgrademinusy.Location = new System.Drawing.Point(281, 206);
+            this.Xgrademinusy.Name = "Xgrademinusy";
+            this.Xgrademinusy.Size = new System.Drawing.Size(75, 23);
+            this.Xgrademinusy.TabIndex = 16;
+            this.Xgrademinusy.Text = "x^(1/y)";
+            this.Xgrademinusy.UseVisualStyleBackColor = true;
+            this.Xgrademinusy.Click += new System.EventHandler(this.Click);
+            // 
+            // Xgrademinusone
+            // 
+            this.Xgrademinusone.Location = new System.Drawing.Point(281, 296);
+            this.Xgrademinusone.Name = "Xgrademinusone";
+            this.Xgrademinusone.Size = new System.Drawing.Size(75, 23);
+            this.Xgrademinusone.TabIndex = 17;
+            this.Xgrademinusone.Text = "1/x";
+            this.Xgrademinusone.UseVisualStyleBackColor = true;
+            this.Xgrademinusone.Click += new System.EventHandler(this.Click2);
+            // 
+            // Log2x
+            // 
+            this.Log2x.Location = new System.Drawing.Point(281, 336);
+            this.Log2x.Name = "Log2x";
+            this.Log2x.Size = new System.Drawing.Size(75, 23);
+            this.Log2x.TabIndex = 18;
+            this.Log2x.Text = "Log2(x)";
+            this.Log2x.UseVisualStyleBackColor = true;
+            this.Log2x.Click += new System.EventHandler(this.Click2);
+            // 
+            // Twogradex
+            // 
+            this.Twogradex.Location = new System.Drawing.Point(388, 163);
+            this.Twogradex.Name = "Twogradex";
+            this.Twogradex.Size = new System.Drawing.Size(75, 23);
+            this.Twogradex.TabIndex = 19;
+            this.Twogradex.Text = "2^x";
+            this.Twogradex.UseVisualStyleBackColor = true;
+            this.Twogradex.Click += new System.EventHandler(this.Click2);
+            // 
+            // Tengradex
+            // 
+            this.Tengradex.Location = new System.Drawing.Point(388, 207);
+            this.Tengradex.Name = "Tengradex";
+            this.Tengradex.Size = new System.Drawing.Size(75, 23);
+            this.Tengradex.TabIndex = 20;
+            this.Tengradex.Text = "10^x";
+            this.Tengradex.UseVisualStyleBackColor = true;
+            this.Tengradex.Click += new System.EventHandler(this.Click2);
+            // 
+            // Arcsin
+            // 
+            this.Arcsin.Location = new System.Drawing.Point(388, 249);
+            this.Arcsin.Name = "Arcsin";
+            this.Arcsin.Size = new System.Drawing.Size(75, 23);
+            this.Arcsin.TabIndex = 21;
+            this.Arcsin.Text = "arcsin(x)";
+            this.Arcsin.UseVisualStyleBackColor = true;
+            this.Arcsin.Click += new System.EventHandler(this.Click2);
+            // 
+            // Arccos
+            // 
+            this.Arccos.Location = new System.Drawing.Point(388, 297);
+            this.Arccos.Name = "Arccos";
+            this.Arccos.Size = new System.Drawing.Size(75, 23);
+            this.Arccos.TabIndex = 22;
+            this.Arccos.Text = "arcos(x)";
+            this.Arccos.UseVisualStyleBackColor = true;
+            this.Arccos.Click += new System.EventHandler(this.Click2);
+            // 
+            // Arctg
+            // 
+            this.Arctg.Location = new System.Drawing.Point(388, 336);
+            this.Arctg.Name = "Arctg";
+            this.Arctg.Size = new System.Drawing.Size(75, 23);
+            this.Arctg.TabIndex = 23;
+            this.Arctg.Text = "arctg(x)";
+            this.Arctg.UseVisualStyleBackColor = true;
+            this.Arctg.Click += new System.EventHandler(this.Click2);
+            // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(277, 351);
+            this.ClientSize = new System.Drawing.Size(526, 413);
+            this.Controls.Add(this.Arctg);
+            this.Controls.Add(this.Arccos);
+            this.Controls.Add(this.Arcsin);
+            this.Controls.Add(this.Tengradex);
+            this.Controls.Add(this.Twogradex);
+            this.Controls.Add(this.Log2x);
+            this.Controls.Add(this.Xgrademinusone);
+            this.Controls.Add(this.Xgrademinusy);
+            this.Controls.Add(this.Logxy);
+            this.Controls.Add(this.Xgradey);
             this.Controls.Add(this.Log10);
             this.Controls.Add(this.Pow);
             this.Controls.Add(this.Cos);
@@ -190,7 +310,7 @@
             this.Controls.Add(this.Substract);
             this.Controls.Add(this.Add);
             this.Name = "Form1";
-            this.Text = "Целочисленный калькулятор";
+            this.Text = "Kалькулятор";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,6 +339,16 @@
         private System.Windows.Forms.Button Cos;
         private System.Windows.Forms.Button Pow;
         private System.Windows.Forms.Button Log10;
+        private System.Windows.Forms.Button Xgradey;
+        private System.Windows.Forms.Button Logxy;
+        private System.Windows.Forms.Button Xgrademinusy;
+        private System.Windows.Forms.Button Xgrademinusone;
+        private System.Windows.Forms.Button Log2x;
+        private System.Windows.Forms.Button Twogradex;
+        private System.Windows.Forms.Button Tengradex;
+        private System.Windows.Forms.Button Arcsin;
+        private System.Windows.Forms.Button Arccos;
+        private System.Windows.Forms.Button Arctg;
     }
 }
 
