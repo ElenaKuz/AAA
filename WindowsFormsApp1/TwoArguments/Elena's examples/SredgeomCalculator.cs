@@ -6,7 +6,13 @@ namespace WindowsFormsApp1.TwoArguments
     {
         public double Calculate(double first, double second)
         {
-            return Math.Sqrt(first * second);
+            double multiply;
+            multiply = first * second;
+            if (multiply < 0)
+            {
+                throw new Exception("Меньше 0");
+            }
+            return Math.Sqrt(multiply);
         }
     }
 }

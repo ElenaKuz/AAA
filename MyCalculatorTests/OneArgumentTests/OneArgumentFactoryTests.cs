@@ -17,6 +17,10 @@ namespace MyCalculatorTests.OneArgumentTests
         [TestCase("Arcsin", typeof(ArcsinCalculator))]
         [TestCase("Arccos", typeof(ArccosCalculator))]
         [TestCase("Arctg", typeof(ArctgCalculator))]
+        [TestCase("Modul", typeof(ModulCalculator))]
+        [TestCase("MinusX", typeof(MinusXCalculator))]
+        [TestCase("Tan", typeof(TanCalculator))]
+        [TestCase("Ctan", typeof(CtanCalculator))]
         public void CalculateTest(string name, Type type)
         {
             var calculator = OneArgumentFactory.CreateCalculate(name);

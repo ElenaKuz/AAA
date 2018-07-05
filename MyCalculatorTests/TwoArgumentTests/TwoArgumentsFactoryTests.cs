@@ -14,6 +14,12 @@ namespace MyCalculatorTests.TwoArgumentTests
         [TestCase("Xgradey", typeof(XgradeyCalculator))]
         [TestCase("Xgrademinusy", typeof(XgrademinusyCalculator))]
         [TestCase("Logxy", typeof(LogxyCalculator))]
+        [TestCase("Sredarifm", typeof(SredarifmCalculator))]
+        [TestCase("Sredgeom", typeof(SredgeomCalculator))]
+        [TestCase("Max", typeof(MaxCalculator))]
+        [TestCase("Min", typeof(MinCalculator))]
+        [TestCase("XmodY", typeof(XmodYCalculator))]
+        [TestCase("XdivY", typeof(XdivYCalculator))]
         public void CalculateTest(string name, Type type)
         {
             var calculator = TwoArgumentFactory.createCalculate(name);
