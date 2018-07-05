@@ -4,6 +4,11 @@ namespace WindowsFormsApp1.OneArgument
 {
     public static class OneArgumentFactory
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="calculatorName"></param>
+        /// <returns></returns>
         public static IOneArgumentCalculator CreateCalculate(string calculatorName)
         {
             switch (calculatorName)

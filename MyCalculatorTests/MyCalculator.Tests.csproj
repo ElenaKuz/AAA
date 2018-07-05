@@ -47,26 +47,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="OneArgumentTests\Alena%27s Tests\CtanTests.cs" />
-    <Compile Include="OneArgumentTests\Alena%27s Tests\MinusXTests.cs" />
-    <Compile Include="OneArgumentTests\Alena%27s Tests\ModulTests.cs" />
-    <Compile Include="OneArgumentTests\Alena%27s Tests\TanTests.cs" />
-    <Compile Include="OneArgumentTests\Elena%27s Tests\ArccosCalculatorTests.cs" />
-    <Compile Include="OneArgumentTests\Elena%27s Tests\ArcsinCalculatorTests.cs" />
-    <Compile Include="OneArgumentTests\Elena%27s Tests\ArctgCalculatorTest.cs" />
-    <Compile Include="OneArgumentTests\Elena%27s Tests\Log2xCalculatorTests.cs" />
+    <Compile Include="OneArgumentTests\CtanTests.cs" />
+    <Compile Include="OneArgumentTests\MinusXTests.cs" />
+    <Compile Include="OneArgumentTests\ModulTests.cs" />
+    <Compile Include="OneArgumentTests\TanTests.cs" />
+    <Compile Include="OneArgumentTests\ArccosCalculatorTests.cs" />
+    <Compile Include="OneArgumentTests\ArcsinCalculatorTests.cs" />
+    <Compile Include="OneArgumentTests\ArctgCalculatorTest.cs" />
+    <Compile Include="OneArgumentTests\Log2xCalculatorTests.cs" />
     <Compile Include="OneArgumentTests\OneArgumentFactoryTests.cs" />
     <Compile Include="OneArgumentTests\CosCalculatorTests.cs" />
-    <Compile Include="OneArgumentTests\Elena%27s Tests\TengradeXTests.cs" />
-    <Compile Include="OneArgumentTests\Elena%27s Tests\TwogradeXTests.cs" />
-    <Compile Include="OneArgumentTests\Elena%27s Tests\XgrademinusoneTests.cs" />
-    <Compile Include="TwoArgumentTests\Alena%27s Tests\MaxTests.cs" />
-    <Compile Include="TwoArgumentTests\Alena%27s Tests\MinTests.cs" />
-    <Compile Include="TwoArgumentTests\Alena%27s Tests\SredarifmTests.cs" />
-    <Compile Include="TwoArgumentTests\Alena%27s Tests\SredgeomTests.cs" />
-    <Compile Include="TwoArgumentTests\Alena%27s Tests\XdivYTests.cs" />
-    <Compile Include="TwoArgumentTests\Alena%27s Tests\XmodYTests.cs" />
-    <Compile Include="TwoArgumentTests\Elena%27s Tests\LogxyTest.cs" />
+    <Compile Include="OneArgumentTests\TengradeXTests.cs" />
+    <Compile Include="OneArgumentTests\TwogradeXTests.cs" />
+    <Compile Include="OneArgumentTests\XgrademinusoneTests.cs" />
+    <Compile Include="TwoArgumentTests\MaxTests.cs" />
+    <Compile Include="TwoArgumentTests\MinTests.cs" />
+    <Compile Include="TwoArgumentTests\SredarifmTests.cs" />
+    <Compile Include="TwoArgumentTests\SredgeomTests.cs" />
+    <Compile Include="TwoArgumentTests\XdivYTests.cs" />
+    <Compile Include="TwoArgumentTests\XmodYTests.cs" />
+    <Compile Include="TwoArgumentTests\LogxyTest.cs" />
     <Compile Include="TwoArgumentTests\TwoArgumentsFactoryTests.cs" />
     <Compile Include="TwoArgumentTests\DivisionCalculatorTests.cs" />
     <Compile Include="OneArgumentTests\Log10CalculatorTests.cs" />
@@ -76,8 +76,8 @@
     <Compile Include="OneArgumentTests\PowCalculatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OneArgumentTests\SinCalculatorTests.cs" />
-    <Compile Include="TwoArgumentTests\Elena%27s Tests\XgrademinusyTests.cs" />
-    <Compile Include="TwoArgumentTests\Elena%27s Tests\XgradeyCalculatorTests.cs" />
+    <Compile Include="TwoArgumentTests\XgrademinusyTests.cs" />
+    <Compile Include="TwoArgumentTests\XgradeyCalculatorTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WindowsFormsApp1\MyCalculator.csproj">

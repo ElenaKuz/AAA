@@ -1,14 +1,19 @@
 ﻿using System;
-using System.Runtime.InteropServices.WindowsRuntime;
 
 namespace WindowsFormsApp1.TwoArguments
 {
     public static class TwoArgumentFactory
     {
         public static object CreateCalculate;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="CalculatorName"></param>
+        /// <returns></returns>
 
         public static ITwoArgumentsCalculator createCalculate(string CalculatorName)
         {
+            
             switch (CalculatorName)
             {
                 case "Add": return new PlusCalculator();
