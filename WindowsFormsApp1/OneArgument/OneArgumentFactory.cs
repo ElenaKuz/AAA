@@ -19,6 +19,10 @@ namespace WindowsFormsApp1.OneArgument
                 case "Arcsin": return new ArcsinCalculator();
                 case "Arccos": return new ArccosCalculator();
                 case "Arctg": return new ArctgCalculator();
+                case "Modul": return new ModulCalculator();
+                case "MinusX": return new MinusXCalculator();
+                case "Tan": return new TanCalculator();
+                case "Ctan": return new CtanCalculator();
                 default:
                     throw new Exception("Неизвестная операция");
             }

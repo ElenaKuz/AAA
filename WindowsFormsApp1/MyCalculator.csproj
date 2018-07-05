@@ -45,14 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OneArgument\ArccosCalculator.cs" />
-    <Compile Include="OneArgument\ArcsinCalculator.cs" />
-    <Compile Include="OneArgument\ArctgCalculator.cs" />
+    <Compile Include="OneArgument\Alena%27s examples\ArccosCalculator.cs" />
+    <Compile Include="OneArgument\Alena%27s examples\ArcsinCalculator.cs" />
+    <Compile Include="OneArgument\Alena%27s examples\ArctgCalculator.cs" />
     <Compile Include="OneArgument\CosCalculator.cs" />
-    <Compile Include="OneArgument\Log2xCalculator.cs" />
-    <Compile Include="OneArgument\TengradeX.cs" />
-    <Compile Include="OneArgument\TwogradeX.cs" />
-    <Compile Include="OneArgument\XgrademinusoneCalculator.cs" />
+    <Compile Include="OneArgument\Alena%27s examples\Log2xCalculator.cs" />
+    <Compile Include="OneArgument\Alena%27s examples\TengradeX.cs" />
+    <Compile Include="OneArgument\Alena%27s examples\TwogradeX.cs" />
+    <Compile Include="OneArgument\Alena%27s examples\XgrademinusoneCalculator.cs" />
+    <Compile Include="OneArgument\Elena%27s examples\CtanCalculator.cs" />
+    <Compile Include="OneArgument\Elena%27s examples\MinusXCalculator.cs" />
+    <Compile Include="OneArgument\Elena%27s examples\ModulCalculator.cs" />
+    <Compile Include="OneArgument\Elena%27s examples\TanCalculator.cs" />
     <Compile Include="TwoArguments\DivisionCalculator.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -61,9 +65,15 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="OneArgument\IOneArgumentCalculator.cs" />
+    <Compile Include="TwoArguments\Elena%27s examples\MaxCalculator.cs" />
+    <Compile Include="TwoArguments\Elena%27s examples\MinCalculator.cs" />
+    <Compile Include="TwoArguments\Elena%27s examples\SredarifmCalculator.cs" />
+    <Compile Include="TwoArguments\Elena%27s examples\SredgeomCalculator.cs" />
+    <Compile Include="TwoArguments\Elena%27s examples\XdivYCalculator.cs" />
+    <Compile Include="TwoArguments\Elena%27s examples\XmodYCalculator.cs" />
     <Compile Include="TwoArguments\ITwoArgumentsCalculator.cs" />
     <Compile Include="OneArgument\Log10Calculator.cs" />
-    <Compile Include="TwoArguments\LogxyCalculator.cs" />
+    <Compile Include="TwoArguments\Alena%27s examples\LogxyCalculator.cs" />
     <Compile Include="TwoArguments\MinusCalculator.cs" />
     <Compile Include="TwoArguments\MultipyCalculator.cs" />
     <Compile Include="OneArgument\OneArgumentFactory.cs" />
@@ -73,8 +83,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OneArgument\SinCalculator.cs" />
     <Compile Include="TwoArguments\TwoArgumentFactory.cs" />
-    <Compile Include="TwoArguments\XgrademinusyCalculator.cs" />
-    <Compile Include="TwoArguments\XgradeyCalculator.cs" />
+    <Compile Include="TwoArguments\Alena%27s examples\XgrademinusyCalculator.cs" />
+    <Compile Include="TwoArguments\Alena%27s examples\XgradeyCalculator.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,5 +110,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

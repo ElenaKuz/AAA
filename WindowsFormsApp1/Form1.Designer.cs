@@ -52,6 +52,18 @@
             this.Arcsin = new System.Windows.Forms.Button();
             this.Arccos = new System.Windows.Forms.Button();
             this.Arctg = new System.Windows.Forms.Button();
+            this.Sredarifm = new System.Windows.Forms.Button();
+            this.Modul = new System.Windows.Forms.Button();
+            this.Tan = new System.Windows.Forms.Button();
+            this.Max = new System.Windows.Forms.Button();
+            this.XmodY = new System.Windows.Forms.Button();
+            this.Sredgeom = new System.Windows.Forms.Button();
+            this.MinusX = new System.Windows.Forms.Button();
+            this.Ctan = new System.Windows.Forms.Button();
+            this.Min = new System.Windows.Forms.Button();
+            this.XdivY = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Add
@@ -184,7 +196,7 @@
             // 
             // Xgradey
             // 
-            this.Xgradey.Location = new System.Drawing.Point(281, 163);
+            this.Xgradey.Location = new System.Drawing.Point(333, 163);
             this.Xgradey.Name = "Xgradey";
             this.Xgradey.Size = new System.Drawing.Size(75, 23);
             this.Xgradey.TabIndex = 14;
@@ -194,7 +206,7 @@
             // 
             // Logxy
             // 
-            this.Logxy.Location = new System.Drawing.Point(281, 249);
+            this.Logxy.Location = new System.Drawing.Point(333, 249);
             this.Logxy.Name = "Logxy";
             this.Logxy.Size = new System.Drawing.Size(75, 23);
             this.Logxy.TabIndex = 15;
@@ -204,7 +216,7 @@
             // 
             // Xgrademinusy
             // 
-            this.Xgrademinusy.Location = new System.Drawing.Point(281, 206);
+            this.Xgrademinusy.Location = new System.Drawing.Point(333, 206);
             this.Xgrademinusy.Name = "Xgrademinusy";
             this.Xgrademinusy.Size = new System.Drawing.Size(75, 23);
             this.Xgrademinusy.TabIndex = 16;
@@ -214,7 +226,7 @@
             // 
             // Xgrademinusone
             // 
-            this.Xgrademinusone.Location = new System.Drawing.Point(281, 296);
+            this.Xgrademinusone.Location = new System.Drawing.Point(333, 296);
             this.Xgrademinusone.Name = "Xgrademinusone";
             this.Xgrademinusone.Size = new System.Drawing.Size(75, 23);
             this.Xgrademinusone.TabIndex = 17;
@@ -224,7 +236,7 @@
             // 
             // Log2x
             // 
-            this.Log2x.Location = new System.Drawing.Point(281, 336);
+            this.Log2x.Location = new System.Drawing.Point(333, 336);
             this.Log2x.Name = "Log2x";
             this.Log2x.Size = new System.Drawing.Size(75, 23);
             this.Log2x.TabIndex = 18;
@@ -234,7 +246,7 @@
             // 
             // Twogradex
             // 
-            this.Twogradex.Location = new System.Drawing.Point(388, 163);
+            this.Twogradex.Location = new System.Drawing.Point(440, 163);
             this.Twogradex.Name = "Twogradex";
             this.Twogradex.Size = new System.Drawing.Size(75, 23);
             this.Twogradex.TabIndex = 19;
@@ -244,7 +256,7 @@
             // 
             // Tengradex
             // 
-            this.Tengradex.Location = new System.Drawing.Point(388, 207);
+            this.Tengradex.Location = new System.Drawing.Point(440, 207);
             this.Tengradex.Name = "Tengradex";
             this.Tengradex.Size = new System.Drawing.Size(75, 23);
             this.Tengradex.TabIndex = 20;
@@ -254,7 +266,7 @@
             // 
             // Arcsin
             // 
-            this.Arcsin.Location = new System.Drawing.Point(388, 249);
+            this.Arcsin.Location = new System.Drawing.Point(440, 249);
             this.Arcsin.Name = "Arcsin";
             this.Arcsin.Size = new System.Drawing.Size(75, 23);
             this.Arcsin.TabIndex = 21;
@@ -264,7 +276,7 @@
             // 
             // Arccos
             // 
-            this.Arccos.Location = new System.Drawing.Point(388, 297);
+            this.Arccos.Location = new System.Drawing.Point(440, 297);
             this.Arccos.Name = "Arccos";
             this.Arccos.Size = new System.Drawing.Size(75, 23);
             this.Arccos.TabIndex = 22;
@@ -274,7 +286,7 @@
             // 
             // Arctg
             // 
-            this.Arctg.Location = new System.Drawing.Point(388, 336);
+            this.Arctg.Location = new System.Drawing.Point(440, 336);
             this.Arctg.Name = "Arctg";
             this.Arctg.Size = new System.Drawing.Size(75, 23);
             this.Arctg.TabIndex = 23;
@@ -282,9 +294,139 @@
             this.Arctg.UseVisualStyleBackColor = true;
             this.Arctg.Click += new System.EventHandler(this.Click2);
             // 
+            // Sredarifm
+            // 
+            this.Sredarifm.Location = new System.Drawing.Point(607, 145);
+            this.Sredarifm.Name = "Sredarifm";
+            this.Sredarifm.Size = new System.Drawing.Size(75, 41);
+            this.Sredarifm.TabIndex = 24;
+            this.Sredarifm.Text = "Сред. ариф-ое";
+            this.Sredarifm.UseVisualStyleBackColor = true;
+            this.Sredarifm.Click += new System.EventHandler(this.Click);
+            // 
+            // Modul
+            // 
+            this.Modul.Location = new System.Drawing.Point(607, 206);
+            this.Modul.Name = "Modul";
+            this.Modul.Size = new System.Drawing.Size(75, 23);
+            this.Modul.TabIndex = 25;
+            this.Modul.Text = "| x |";
+            this.Modul.UseVisualStyleBackColor = true;
+            this.Modul.Click += new System.EventHandler(this.Click2);
+            // 
+            // Tan
+            // 
+            this.Tan.Location = new System.Drawing.Point(607, 249);
+            this.Tan.Name = "Tan";
+            this.Tan.Size = new System.Drawing.Size(75, 23);
+            this.Tan.TabIndex = 26;
+            this.Tan.Text = "tan(x)";
+            this.Tan.UseVisualStyleBackColor = true;
+            this.Tan.Click += new System.EventHandler(this.Click2);
+            // 
+            // Max
+            // 
+            this.Max.Location = new System.Drawing.Point(607, 297);
+            this.Max.Name = "Max";
+            this.Max.Size = new System.Drawing.Size(75, 23);
+            this.Max.TabIndex = 27;
+            this.Max.Text = "max(x,y)";
+            this.Max.UseVisualStyleBackColor = true;
+            this.Max.Click += new System.EventHandler(this.Click);
+            // 
+            // XmodY
+            // 
+            this.XmodY.Location = new System.Drawing.Point(607, 336);
+            this.XmodY.Name = "XmodY";
+            this.XmodY.Size = new System.Drawing.Size(75, 23);
+            this.XmodY.TabIndex = 28;
+            this.XmodY.Text = "x mod y";
+            this.XmodY.UseVisualStyleBackColor = true;
+            this.XmodY.Click += new System.EventHandler(this.Click);
+            // 
+            // Sredgeom
+            // 
+            this.Sredgeom.Location = new System.Drawing.Point(716, 145);
+            this.Sredgeom.Name = "Sredgeom";
+            this.Sredgeom.Size = new System.Drawing.Size(75, 41);
+            this.Sredgeom.TabIndex = 29;
+            this.Sredgeom.Text = "Сред. геом-ое";
+            this.Sredgeom.UseVisualStyleBackColor = true;
+            this.Sredgeom.Click += new System.EventHandler(this.Click);
+            // 
+            // MinusX
+            // 
+            this.MinusX.Location = new System.Drawing.Point(716, 207);
+            this.MinusX.Name = "MinusX";
+            this.MinusX.Size = new System.Drawing.Size(75, 23);
+            this.MinusX.TabIndex = 30;
+            this.MinusX.Text = "-х";
+            this.MinusX.UseVisualStyleBackColor = true;
+            this.MinusX.Click += new System.EventHandler(this.Click2);
+            // 
+            // Ctan
+            // 
+            this.Ctan.Location = new System.Drawing.Point(716, 249);
+            this.Ctan.Name = "Ctan";
+            this.Ctan.Size = new System.Drawing.Size(75, 23);
+            this.Ctan.TabIndex = 31;
+            this.Ctan.Text = "ctan(x)";
+            this.Ctan.UseVisualStyleBackColor = true;
+            this.Ctan.Click += new System.EventHandler(this.Click2);
+            // 
+            // Min
+            // 
+            this.Min.Location = new System.Drawing.Point(716, 296);
+            this.Min.Name = "Min";
+            this.Min.Size = new System.Drawing.Size(75, 23);
+            this.Min.TabIndex = 32;
+            this.Min.Text = "min(x,y)";
+            this.Min.UseVisualStyleBackColor = true;
+            this.Min.Click += new System.EventHandler(this.Click);
+            // 
+            // XdivY
+            // 
+            this.XdivY.Location = new System.Drawing.Point(716, 336);
+            this.XdivY.Name = "XdivY";
+            this.XdivY.Size = new System.Drawing.Size(75, 23);
+            this.XdivY.TabIndex = 33;
+            this.XdivY.Text = "x div y";
+            this.XdivY.UseVisualStyleBackColor = true;
+            this.XdivY.Click += new System.EventHandler(this.Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(333, 128);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 13);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "Chelsea 300";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(607, 115);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.TabIndex = 35;
+            this.label5.Text = "ElenaKuz";
+            // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(526, 413);
+            this.ClientSize = new System.Drawing.Size(878, 413);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.XdivY);
+            this.Controls.Add(this.Min);
+            this.Controls.Add(this.Ctan);
+            this.Controls.Add(this.MinusX);
+            this.Controls.Add(this.Sredgeom);
+            this.Controls.Add(this.XmodY);
+            this.Controls.Add(this.Max);
+            this.Controls.Add(this.Tan);
+            this.Controls.Add(this.Modul);
+            this.Controls.Add(this.Sredarifm);
             this.Controls.Add(this.Arctg);
             this.Controls.Add(this.Arccos);
             this.Controls.Add(this.Arcsin);
@@ -349,6 +491,18 @@
         private System.Windows.Forms.Button Arcsin;
         private System.Windows.Forms.Button Arccos;
         private System.Windows.Forms.Button Arctg;
+        private System.Windows.Forms.Button Sredarifm;
+        private System.Windows.Forms.Button Modul;
+        private System.Windows.Forms.Button Tan;
+        private System.Windows.Forms.Button Max;
+        private System.Windows.Forms.Button XmodY;
+        private System.Windows.Forms.Button Sredgeom;
+        private System.Windows.Forms.Button MinusX;
+        private System.Windows.Forms.Button Ctan;
+        private System.Windows.Forms.Button Min;
+        private System.Windows.Forms.Button XdivY;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 
