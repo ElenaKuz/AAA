@@ -6,8 +6,11 @@ namespace WindowsFormsApp1.OneArgument
     {
     public double Calculate(double first)
     {
-        return Math.Log(2,first);
+        if (first < 0)
+        {
+            throw new Exception("Меньше 0");
+        }
+            return Math.Log(first,2);
     }
-
     }
 }

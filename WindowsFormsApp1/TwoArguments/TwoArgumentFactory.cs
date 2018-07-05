@@ -5,6 +5,8 @@ namespace WindowsFormsApp1.TwoArguments
 {
     public static class TwoArgumentFactory
     {
+        public static object CreateCalculate;
+
         public static ITwoArgumentsCalculator createCalculate(string CalculatorName)
         {
             switch (CalculatorName)

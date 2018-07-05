@@ -6,7 +6,7 @@ namespace MyCalculatorTests.TwoArgumentTests
     [TestFixture]
     public class XgrademinusyTests
     {
-        [TestCase(2, -2, 0.25)]
+        [TestCase(4, 2, 2)]
         public void CalculateTest(double firstValue, double secondValue, double expected)
         {
             var calculator = new XgrademinusyCalculator();

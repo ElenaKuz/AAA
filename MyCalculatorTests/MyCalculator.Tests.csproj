@@ -47,10 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="OneArgumentTests\ArccosCalculatorTests.cs" />
+    <Compile Include="OneArgumentTests\ArcsinCalculatorTests.cs" />
     <Compile Include="OneArgumentTests\ArctgCalculatorTest.cs" />
     <Compile Include="OneArgumentTests\Log2xCalculatorTests.cs" />
     <Compile Include="OneArgumentTests\OneArgumentFactoryTests.cs" />
     <Compile Include="OneArgumentTests\CosCalculatorTests.cs" />
+    <Compile Include="OneArgumentTests\TengradeXTests.cs" />
+    <Compile Include="OneArgumentTests\TwogradeXTests.cs" />
+    <Compile Include="OneArgumentTests\XgrademinusoneTests.cs" />
     <Compile Include="TwoArgumentTests\LogxyTest.cs" />
     <Compile Include="TwoArgumentTests\TwoArgumentsFactoryTests.cs" />
     <Compile Include="TwoArgumentTests\DivisionCalculatorTests.cs" />

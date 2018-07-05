@@ -1,5 +1,6 @@
 ﻿using WindowsFormsApp1.TwoArguments;
 using NUnit.Framework;
+using System;
 
 namespace MyCalculatorTests.TwoArgumentTests
 {
@@ -15,6 +16,24 @@ namespace MyCalculatorTests.TwoArgumentTests
             var actualResult = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, actualResult);
         }
-    }
 
+        [Test]
+        public void MyCalculateTest1()
+        {
+            ITwoArgumentsCalculator calculator = TwoArgumentFactory.createCalculate("Logxy");
+            Assert.Throws<Exception>(() => calculator.Calculate(1, 2));
+        }
+        [Test]
+        public void MyCalculateTest2()
+        {
+            ITwoArgumentsCalculator calculator = TwoArgumentFactory.createCalculate("Logxy");
+            Assert.Throws<Exception>(() => calculator.Calculate(-1, 3));
+        }
+        [Test]
+        public void MyCalculateTest3()
+        {
+            ITwoArgumentsCalculator calculator = TwoArgumentFactory.createCalculate("Logxy");
+            Assert.Throws<Exception>(() => calculator.Calculate(2, -9));
+        }
+    }
 }

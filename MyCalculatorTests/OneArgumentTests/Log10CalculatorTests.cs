@@ -20,7 +20,7 @@ namespace MyCalculatorTests.OneArgumentTests
         [Test]
         public void MyCalculateTest()
         {
-            IOneArgumentCalculator calculator = OneArgumentFactory.createCalculate("Log10");
+            IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculate("Log10");
             Assert.Throws<Exception>(() => calculator.Calculate(-3));
         }
     }

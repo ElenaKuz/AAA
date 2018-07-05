@@ -1,31 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MyCalculatorTests.OneArgumentTests
-{
-    class Log2xCalculatorTests
-    {
-    }
-}
-
 using WindowsFormsApp1.OneArgument;
 using NUnit.Framework;
 
 namespace MyCalculatorTests.OneArgumentTests
 {
     [TestFixture]
-    public class ArctgCalculatorTest
+    public class Log2XCalculatorTests
     {
-        [TestCase(0, 1)]
+        [TestCase(4, 2)]
+        [TestCase(16, 4)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var calculator = new ArctgCalculator();
+            var calculator = new Log2XCalculator();
             var actualResult = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actualResult);
         }
+        [Test]
+        public void MyCalculateTest()
+        {
+            IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculate("Log2x");
+            Assert.Throws<Exception>(() => calculator.Calculate(-3));
+        }
     }
-
 }

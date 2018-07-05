@@ -37,7 +37,7 @@ namespace WindowsFormsApp1
             string firstValueText = textBox3.Text;
             double firstValue = Convert.ToDouble(firstValueText);
 
-            IOneArgumentCalculator calculator = OneArgumentFactory.createCalculate(Transmission);
+            IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculate(Transmission);
             double result = calculator.Calculate(firstValue);
 
             textBox5.Text = result.ToString();

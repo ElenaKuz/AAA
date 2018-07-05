@@ -4,9 +4,9 @@ namespace WindowsFormsApp1.OneArgument
 {
     public static class OneArgumentFactory
     {
-        public static IOneArgumentCalculator createCalculate(string CalculatorName)
+        public static IOneArgumentCalculator CreateCalculate(string calculatorName)
         {
-            switch (CalculatorName)
+            switch (calculatorName)
             {
                 case "Sin": return new SinCalculator();
                 case "Cos": return new CosCalculator();
